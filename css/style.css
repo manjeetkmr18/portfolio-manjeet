@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--white);
     color: var(--text);
 }
@@ -180,7 +180,6 @@ header .navbar {
     margin-bottom: 1rem;
 }
 
-
 .icon {
     font-size: 25px;
     color: var(--heading);
@@ -202,6 +201,52 @@ header .navbar {
 
 .heart {
     color: var(--red);
+}
+
+.intro {
+    font-weight: bold;
+    color: var(--red);
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.about-hero-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about {
+    margin-bottom: 1rem;
+    line-height: 2;
+}
+
+.divider {
+    border-top: 2px solid var(--heading);
+    width: 100%;
+}
+
+.about-hero {
+    padding-top: 3rem;
+}
+
+.technologies {
+    padding-top: 1rem;
+    color: var(--red);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.tech-icons {
+    display: flex;
+    padding: 3% 0;
+    justify-content: space-around;
+    text-align: start;
+    flex-wrap: wrap;
+}
+
+.tech-icons .fa-brands {
+    margin-right: 2rem;
+    font-size: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -254,4 +299,7 @@ header .navbar {
         flex-direction: column;
     }
 
+    .about-hero {
+        flex-direction: column;
+    }
 }
