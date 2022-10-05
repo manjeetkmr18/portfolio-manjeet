@@ -1,6 +1,3 @@
-/* Language: css */
-/* Path: css/style.css */
-
 * {
     margin: 0;
     padding: 0;
@@ -62,12 +59,11 @@ a:hover {
 }
 
 header {
-    background-color: var(--white);
     padding: 20px 0;
     position: relative;
     width: 100%;
     z-index: 2;
-    border-bottom: 1px #ddd7d7 solid;
+    /* border-bottom: 1px #ddd7d7 solid; */
 }
 
 header .navbar {
@@ -98,29 +94,13 @@ header .navbar {
     list-style: none;
 }
 
-#mobileMenu {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    align-items: center;
-    margin-top: 80px;
-    pointer-events: none;
-}
-
-#bars {
-    font-size: 26px;
-    display: none;
-    cursor: pointer;
-}
 
 /* Hero */
+
+.bg {
+    background-position: bottom;
+    background-image: url(../images/bg.jpg);
+}
 
 .grid {
     display: grid;
@@ -289,28 +269,23 @@ header .navbar {
         overflow: visible;
     }
 
-    #bars {
-        display: block;
-    }
-
     #logo {
         height: 60%;
     }
 
-    .overlay {
-        left: 0 !important;
-        opacity: 1;
-        pointer-events: auto;
-        transition: left 0.6s ease-in-out;
-    }
-
-    .navbar-link {
-        display: none;
+    header .navbar {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
     }
 
     .nav-link {
         font-size: 24px;
         margin: 30px 0;
+    }
+
+    .navbar-link ul {
+        gap: 20px;
     }
 
     .grid-two-column {
@@ -319,7 +294,7 @@ header .navbar {
 
     .grid {
         display: flex;
-        grid-gap: 5rem;
+        grid-gap: 1rem;
         flex-direction: column-reverse;
     }
 
@@ -336,5 +311,25 @@ header .navbar {
 
     .about-hero {
         flex-direction: column;
+    }
+
+    .about-contact {
+        width: 100%;
+    }
+
+    .my-skills {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .work-card {
+        gap: 10px;
+        margin: 1rem 0;
+        flex-direction: row;
+    }
+
+    .skills-title {
+        padding: 1rem;
     }
 }
