@@ -258,16 +258,27 @@ header .navbar {
     align-items: center;
 }
 
+.section-skills {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skills-title {
+    padding: 3rem;
+}
+
 .my-skills {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2rem 0px;
 }
 
 .work-card {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     text-align: center;
     align-items: center;
     flex-direction: column;
