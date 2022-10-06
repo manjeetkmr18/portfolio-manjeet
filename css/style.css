@@ -397,10 +397,26 @@ textarea {
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
+    width: 98%;
     height: inherit;
     background: var(--gradient);
     border-radius: 10rem;
+}
+
+.skill-js::before {
+    width: 90%;
+}
+
+.skill-flutter::before {
+    width: 80%;
+}
+
+.skill-python::before {
+    width: 70%;
+}
+
+.skill-ux::before {
+    width: 95%;
 }
 
 .skills-have {
