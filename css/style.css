@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+/* I use variables for colors so that If incase I need to change in complete webstie I can change it from variable and it will reflect in whole website. I Learn this technique from a medium blog */
 :root {
     --heading: #000;
     --hover: #0000ff;
@@ -370,7 +372,6 @@ textarea {
     margin: 0 auto;
     text-align: center;
 }
-
 
 
 .skills-data-stats {
